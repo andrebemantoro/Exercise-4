@@ -1,0 +1,25 @@
+body{
+    background-image: url('../images/info.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+a{
+    font-family: Arial;
+    font-weight: 40px;
+    color: whitesmoke;
+}
+
+h1{
+    color: whitesmoke;
+    font-weight: 300;
+
+}
+
+p{
+    font-family: Arial;
+    font-weight: 40px;
+    color: whitesmoke;
+    text-align: center;
+}

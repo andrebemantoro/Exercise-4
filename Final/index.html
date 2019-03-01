@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="shortcut icon" type="image/png" href="images/happy.png"/>
+        <title>Instant Galery</title>
+    </head>
+
+    <body>
+        
+        <a href="index.html">Home</a>
+        <a href="info.html">More Info</a>
+        <a href="kontak.html">Contact Us</a>
+        <div>
+            <H1>Explore Your Photos</H1>
+        </div>
+
+        <div class="slider">
+                <div class="photos">
+                        <img class="mySlides" src="images/pict1.jpg">
+                        <img class="mySlides" src="images/pict2.jpg">
+                        <img class="mySlides" src="images/pict3.jpg">
+                        <img class="mySlides" src="images/pict4.jpg">
+                </div>
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                    }
+
+                    function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1} 
+                    if (n < 1) {slideIndex = x.length} ;
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none"; 
+                    }
+                    x[slideIndex-1].style.display = "block"; 
+                    }
+
+                    
+                </script>
+             
+        </div>
+
+        
+
+    </body>
+</html>

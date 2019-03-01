@@ -1,0 +1,21 @@
+body{
+    background-image: url('../images/white.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+}
+h1{
+    color: rgb(194, 194, 180);
+
+}
+
+.photos{
+
+    margin-left: 33%;
+}
+
+a{
+    font-family: Arial;
+    font-weight: 40px;
+    color: black;
+}
